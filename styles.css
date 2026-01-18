@@ -164,6 +164,11 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: box-shadow var(--transition-normal);
+}
+
+.site-header.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .header-top {

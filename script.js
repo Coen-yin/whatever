@@ -116,29 +116,36 @@ document.addEventListener('DOMContentLoaded', function() {
     const tickerContent = document.querySelector('.ticker-content');
     
     if (tickerContent) {
-        // Duplicate content for seamless loop
-        const tickerText = tickerContent.textContent;
-        tickerContent.textContent = tickerText + ' • ' + tickerText;
+        // Clone the ticker content for seamless loop
+        const tickerText = tickerContent.cloneNode(true);
+        tickerContent.parentElement.appendChild(tickerText);
     }
 });
 
 // ===== SCROLL TO TOP FUNCTIONALITY (OPTIONAL) =====
 document.addEventListener('DOMContentLoaded', function() {
-    // Add scroll behavior to track scroll position
-    let lastScrollTop = 0;
+    // Cache header element for better performance
     const header = document.querySelector('.site-header');
+    let lastScrollTop = 0;
+    let ticking = false;
     
     window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Optional: Add shadow to header when scrolled
-        if (scrollTop > 50) {
-            header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.15)';
-        } else {
-            header.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
-        }
-        
         lastScrollTop = scrollTop;
+        
+        // Use requestAnimationFrame for better performance
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                // Use CSS class toggle instead of direct style manipulation
+                if (lastScrollTop > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
     });
 });
 
