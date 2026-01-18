@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Daily Planet - Metropolis' finest news source">
+    <title>The Daily Planet - Truth, Justice, and the American Way</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Disclaimer Modal -->
+    <div id="disclaimer-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Important Notice</h2>
+            </div>
+            <div class="modal-body">
+                <p>This is a fake parody website. We are not affiliated with, associated with, or endorsed by Warner Brothers, DC Comics, or Superman. This is purely a fan-made project for entertainment purposes only.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="accept-btn" class="btn-primary">Accept & Enter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo-section">
+                    <h1 class="site-logo">The Daily Planet</h1>
+                    <p class="tagline">A Great Metropolitan Newspaper</p>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#breaking-news">Breaking News</a></li>
+                    <li><a href="#daily-news">Daily News</a></li>
+                    <li><a href="#public-records">Public Records</a></li>
+                    <li><a href="#archives">Archives</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-ticker">
+        <span class="ticker-label">BREAKING:</span>
+        <div class="ticker-content">
+            Superman saves commuter train from derailment • LexCorp announces new energy initiative • Mayor declares "Superman Day" • Metropolis crime rate drops 40%
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <article class="hero-article">
+                    <div class="hero-image">
+                        <img src="https://via.placeholder.com/1200x600/1e3a8a/ffffff?text=Superman+Saves+Metropolis" alt="Superman flying over Metropolis skyline">
+                    </div>
+                    <div class="hero-content">
+                        <span class="category">BREAKING NEWS</span>
+                        <h2 class="hero-title">Superman Prevents Catastrophic Bridge Collapse, Saves Hundreds</h2>
+                        <p class="article-meta">
+                            <span class="author">By Lois Lane</span>
+                            <span class="date">January 18, 2026</span>
+                        </p>
+                        <p class="hero-excerpt">In a dramatic rescue yesterday evening, the Man of Steel prevented what could have been Metropolis' worst disaster in decades. The Centennial Bridge, carrying over 300 vehicles during rush hour, began to collapse due to structural failure. Superman arrived within seconds, supporting the bridge while emergency services evacuated all civilians to safety.</p>
+                        <a href="#" class="read-more">Read Full Story →</a>
+                    </div>
+                </article>
+            </section>
+
+            <div class="content-grid">
+                <!-- Main News Grid -->
+                <section id="breaking-news" class="news-grid">
+                    <h2 class="section-title">Latest Headlines</h2>
+                    
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250/3b82f6/ffffff?text=LexCorp+Tower" alt="LexCorp headquarters">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">BUSINESS</span>
+                            <h3 class="card-title">Lex Luthor Unveils Revolutionary Clean Energy Plan</h3>
+                            <p class="article-meta">
+                                <span class="author">By Clark Kent</span>
+                                <span class="date">January 17, 2026</span>
+                            </p>
+                            <p class="card-excerpt">LexCorp CEO announces ambitious plan to power Metropolis with renewable energy, raising questions about the company's true intentions.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Metropolis+Park" alt="Citizens gathering in park">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">LOCAL</span>
+                            <h3 class="card-title">Citizens Share Their Superman Encounters</h3>
+                            <p class="article-meta">
+                                <span class="author">By Jimmy Olsen</span>
+                                <span class="date">January 17, 2026</span>
+                            </p>
+                            <p class="card-excerpt">Daily Planet photographers capture heartwarming stories from Metropolis residents who have been helped by the city's protector.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250/ef4444/ffffff?text=Investigation" alt="Investigation documents">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">INVESTIGATION</span>
+                            <h3 class="card-title">Special Report: The Economic Impact of Superman</h3>
+                            <p class="article-meta">
+                                <span class="author">By Lois Lane</span>
+                                <span class="date">January 16, 2026</span>
+                            </p>
+                            <p class="card-excerpt">An in-depth analysis reveals how Superman's presence has transformed Metropolis into one of America's safest and most prosperous cities.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250/8b5cf6/ffffff?text=City+Hall" alt="Metropolis City Hall">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">POLITICS</span>
+                            <h3 class="card-title">Mayor Berkowitz: "Superman Day" to Become Annual Holiday</h3>
+                            <p class="article-meta">
+                                <span class="author">By Perry White</span>
+                                <span class="date">January 16, 2026</span>
+                            </p>
+                            <p class="card-excerpt">In a unanimous city council vote, Metropolis will officially recognize Superman's contributions with an annual celebration.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250/f59e0b/ffffff?text=Weather+Alert" alt="Metropolis weather">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">WEATHER</span>
+                            <h3 class="card-title">Metropolis Weather: Clear Skies Ahead for Weekend</h3>
+                            <p class="article-meta">
+                                <span class="author">By Weather Team</span>
+                                <span class="date">January 16, 2026</span>
+                            </p>
+                            <p class="card-excerpt">Perfect weather conditions expected this weekend as temperatures reach seasonal highs. Ideal conditions for outdoor activities.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250/06b6d4/ffffff?text=Daily+Planet+Award" alt="Daily Planet newsroom">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">AWARDS</span>
+                            <h3 class="card-title">Daily Planet Wins Pulitzer for Investigative Journalism</h3>
+                            <p class="article-meta">
+                                <span class="author">By Editorial Board</span>
+                                <span class="date">January 15, 2026</span>
+                            </p>
+                            <p class="card-excerpt">Our investigative team's expose on corporate corruption earns journalism's highest honor, continuing our legacy of excellence.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250/ec4899/ffffff?text=Sports+Arena" alt="Metropolis sports stadium">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">SPORTS</span>
+                            <h3 class="card-title">Metropolis Meteors Win Championship in Overtime Thriller</h3>
+                            <p class="article-meta">
+                                <span class="author">By Sports Desk</span>
+                                <span class="date">January 15, 2026</span>
+                            </p>
+                            <p class="card-excerpt">The home team brings glory to Metropolis with a stunning victory, with Superman spotted cheering from the stands.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250/14b8a6/ffffff?text=Safety+Alert" alt="Public safety announcement">
+                        </div>
+                        <div class="card-content">
+                            <span class="category">PUBLIC SAFETY</span>
+                            <h3 class="card-title">MPD Issues New Superhero Activity Safety Guidelines</h3>
+                            <p class="article-meta">
+                                <span class="author">By Clark Kent</span>
+                                <span class="date">January 14, 2026</span>
+                            </p>
+                            <p class="card-excerpt">Metropolis Police Department releases updated protocols for citizens during superhuman confrontations in the city.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Most Read</h3>
+                        <ul class="popular-list">
+                            <li class="popular-item">
+                                <span class="rank">1</span>
+                                <div>
+                                    <a href="#" class="popular-title">Superman Saves Bridge, Hundreds Rescued</a>
+                                    <p class="popular-meta">By Lois Lane • 45K views</p>
+                                </div>
+                            </li>
+                            <li class="popular-item">
+                                <span class="rank">2</span>
+                                <div>
+                                    <a href="#" class="popular-title">Lex Luthor's Clean Energy Announcement</a>
+                                    <p class="popular-meta">By Clark Kent • 32K views</p>
+                                </div>
+                            </li>
+                            <li class="popular-item">
+                                <span class="rank">3</span>
+                                <div>
+                                    <a href="#" class="popular-title">Economic Impact of Superman</a>
+                                    <p class="popular-meta">By Lois Lane • 28K views</p>
+                                </div>
+                            </li>
+                            <li class="popular-item">
+                                <span class="rank">4</span>
+                                <div>
+                                    <a href="#" class="popular-title">Citizens Share Superman Encounters</a>
+                                    <p class="popular-meta">By Jimmy Olsen • 24K views</p>
+                                </div>
+                            </li>
+                            <li class="popular-item">
+                                <span class="rank">5</span>
+                                <div>
+                                    <a href="#" class="popular-title">Daily Planet Wins Pulitzer Prize</a>
+                                    <p class="popular-meta">By Editorial Board • 21K views</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Editor's Picks</h3>
+                        <article class="sidebar-card">
+                            <img src="https://via.placeholder.com/300x150/6366f1/ffffff?text=Opinion" alt="Editorial opinion">
+                            <h4 class="sidebar-card-title">Opinion: Why Metropolis Needs Superman</h4>
+                            <p class="sidebar-card-meta">By Perry White</p>
+                        </article>
+                        <article class="sidebar-card">
+                            <img src="https://via.placeholder.com/300x150/84cc16/ffffff?text=Culture" alt="Culture section">
+                            <h4 class="sidebar-card-title">The Superman Effect: Art and Culture Boom</h4>
+                            <p class="sidebar-card-meta">By Arts Desk</p>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Public Records Section -->
+            <section id="public-records" class="public-records-section">
+                <h2 class="section-title">Public Records</h2>
+                <div class="records-grid">
+                    <div class="record-card">
+                        <div class="record-header">
+                            <span class="record-type">INCIDENT REPORT</span>
+                            <span class="record-date">January 18, 2026</span>
+                        </div>
+                        <h4 class="record-title">Superman Sighting: Centennial Bridge</h4>
+                        <p class="record-content">
+                            <strong>Time:</strong> 17:45 EST<br>
+                            <strong>Location:</strong> Centennial Bridge, Metropolis<br>
+                            <strong>Description:</strong> Subject observed supporting bridge structure during structural failure. All civilians evacuated safely. No casualties reported.
+                        </p>
+                        <a href="#" class="record-link">View Full Report →</a>
+                    </div>
+
+                    <div class="record-card">
+                        <div class="record-header">
+                            <span class="record-type">CITY STATEMENT</span>
+                            <span class="record-date">January 17, 2026</span>
+                        </div>
+                        <h4 class="record-title">Mayor's Office: Superman Day Proclamation</h4>
+                        <p class="record-content">
+                            <strong>Issued by:</strong> Office of the Mayor<br>
+                            <strong>Subject:</strong> Annual Recognition Day<br>
+                            <strong>Summary:</strong> City Council unanimously approves annual Superman Day celebration to honor continued service to Metropolis.
+                        </p>
+                        <a href="#" class="record-link">View Full Statement →</a>
+                    </div>
+
+                    <div class="record-card">
+                        <div class="record-header">
+                            <span class="record-type">FREEDOM OF INFO</span>
+                            <span class="record-date">January 16, 2026</span>
+                        </div>
+                        <h4 class="record-title">Superhero Activity Statistics - Q4 2025</h4>
+                        <p class="record-content">
+                            <strong>Department:</strong> Metropolis PD<br>
+                            <strong>Period:</strong> October - December 2025<br>
+                            <strong>Summary:</strong> 247 confirmed Superman interventions. Crime rate decreased 42%. Emergency response times improved by 35%.
+                        </p>
+                        <a href="#" class="record-link">View Full Document →</a>
+                    </div>
+
+                    <div class="record-card">
+                        <div class="record-header">
+                            <span class="record-type">INCIDENT REPORT</span>
+                            <span class="record-date">January 15, 2026</span>
+                        </div>
+                        <h4 class="record-title">LexCorp Building Evacuation</h4>
+                        <p class="record-content">
+                            <strong>Time:</strong> 14:20 EST<br>
+                            <strong>Location:</strong> LexCorp Tower, Downtown<br>
+                            <strong>Description:</strong> Fire alarm triggered. Building evacuated. Superman assisted with orderly evacuation. False alarm confirmed.
+                        </p>
+                        <a href="#" class="record-link">View Full Report →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Daily News Archive Section -->
+            <section id="daily-news" class="archive-section">
+                <h2 class="section-title">Daily News Archive</h2>
+                <div class="archive-categories">
+                    <button class="category-btn active">All</button>
+                    <button class="category-btn">Local</button>
+                    <button class="category-btn">National</button>
+                    <button class="category-btn">Business</button>
+                    <button class="category-btn">Sports</button>
+                    <button class="category-btn">Entertainment</button>
+                </div>
+                <div class="archive-list">
+                    <article class="archive-item">
+                        <span class="archive-date">January 18, 2026</span>
+                        <h4 class="archive-title">Superman Prevents Catastrophic Bridge Collapse</h4>
+                        <span class="archive-category">LOCAL</span>
+                        <span class="archive-author">Lois Lane</span>
+                    </article>
+                    <article class="archive-item">
+                        <span class="archive-date">January 17, 2026</span>
+                        <h4 class="archive-title">LexCorp Unveils Clean Energy Initiative</h4>
+                        <span class="archive-category">BUSINESS</span>
+                        <span class="archive-author">Clark Kent</span>
+                    </article>
+                    <article class="archive-item">
+                        <span class="archive-date">January 17, 2026</span>
+                        <h4 class="archive-title">Citizens Share Superman Encounter Stories</h4>
+                        <span class="archive-category">LOCAL</span>
+                        <span class="archive-author">Jimmy Olsen</span>
+                    </article>
+                    <article class="archive-item">
+                        <span class="archive-date">January 16, 2026</span>
+                        <h4 class="archive-title">Economic Impact Study: Superman Effect on Metropolis</h4>
+                        <span class="archive-category">BUSINESS</span>
+                        <span class="archive-author">Lois Lane</span>
+                    </article>
+                    <article class="archive-item">
+                        <span class="archive-date">January 15, 2026</span>
+                        <h4 class="archive-title">Metropolis Meteors Win Championship</h4>
+                        <span class="archive-category">SPORTS</span>
+                        <span class="archive-author">Sports Desk</span>
+                    </article>
+                    <article class="archive-item">
+                        <span class="archive-date">January 14, 2026</span>
+                        <h4 class="archive-title">New Safety Guidelines for Superhero Activity</h4>
+                        <span class="archive-category">LOCAL</span>
+                        <span class="archive-author">Clark Kent</span>
+                    </article>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <h2 class="section-title">About The Daily Planet</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Since 1775, The Daily Planet has been Metropolis' most trusted source for news, investigation, and journalism excellence. Our award-winning team of reporters and photographers are dedicated to bringing you the truth, no matter where it leads.</p>
+                        <p>Led by Editor-in-Chief Perry White, our newsroom includes some of the finest journalists in the country, including Pulitzer Prize winner Lois Lane, investigative reporter Clark Kent, and chief photographer Jimmy Olsen.</p>
+                        <p><strong>Our Mission:</strong> To inform, investigate, and inspire the citizens of Metropolis and beyond with fearless, independent journalism.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">249</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Pulitzer Prizes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2M+</span>
+                            <span class="stat-label">Daily Readers</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Daily Planet</h4>
+                    <p>A Great Metropolitan Newspaper</p>
+                    <p class="footer-disclaimer">This is a parody website for entertainment purposes only.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#breaking-news">Breaking News</a></li>
+                        <li><a href="#daily-news">Daily News</a></li>
+                        <li><a href="#public-records">Public Records</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#archives">Archives</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">RSS Feed</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Daily Planet. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
